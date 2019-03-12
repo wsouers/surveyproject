@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Avenir');
+
+h1 {
+	font-family: "Avenir";
+	text-align: center;
+	color: black;
+}
+
+body {
+	background-color: #f1e8ff;
+	font-family: 'Avenir', Helvetica, sans-serif;
+}
+
+.mainbody {
+background-color: skyblue;
+  margin: 0 auto;
+  border-radius: 4px;
+  width: 75%;
+  max-width: 900px;
+  padding: 10px;
+  padding-top: 20px;
+
+}
+
+.labels {
+	color: black;
+	display: inline-block;
+	text-align: right;
+	width: 150px;
+
+}
+
+.answerfields {
+	width: 300px;
+	box-sizing: border-box;
+}
+
+
+input {
+	width: 300px;
+	box-sizing: border-box;
+	margin: 1%;
+}
+
+select {
+	width: 300px;
+	box-sizing: border-box;
+	margin: 1%;
+}
+
+button {
+	display: inline-block;
+	text-align: right;
+	width: 60px;
+	margin: 0 0 0 90px;
+}
