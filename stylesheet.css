@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Avenir');
 
-h1 {
-	font-family: "Avenir";
+ h1 {
+	font-family: "Avenir", Helvetica;
 	text-align: center;
 	color: black;
 }
@@ -11,36 +11,44 @@ body {
 	font-family: 'Avenir', Helvetica, sans-serif;
 }
 
-.mainbody {
-background-color: skyblue;
-  margin: 0 auto;
-  border-radius: 4px;
-  width: 75%;
-  max-width: 900px;
-  padding: 10px;
-  padding-top: 20px;
+#description {
+	text-align: center;
+}
+ .mainbody {
+  background-color: skyblue;
+  margin: 0 auto auto ;
+  width: 90%;
+  max-width: 960px;
+  padding: 10px 0 10px 0;
+}
 
+.rightColumn {
+	width: 50%;
+	display: inline-block;
+	text-align: left;
+}
+
+.rightColumn ul {
+	margin: 0 0 0 0;
+	padding: .25em 0 0 0;
 }
 
 .labels {
 	color: black;
 	display: inline-block;
 	text-align: right;
-	width: 150px;
+	width: 40%;
+
 
 }
 
-.answerfields {
-	width: 300px;
-	box-sizing: border-box;
-}
-
-
-input {
+.answerFields {
 	width: 300px;
 	box-sizing: border-box;
 	margin: 1%;
 }
+
+
 
 select {
 	width: 300px;
@@ -50,7 +58,40 @@ select {
 
 button {
 	display: inline-block;
-	text-align: right;
-	width: 60px;
-	margin: 0 0 0 90px;
+	width: 90px;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+#submitButton {
+	text-align: center;
+}
+ul {
+	list-style: none;
+}
+
+#godA {
+	float: left;
+	margin: .28em .28em 0 0;
+}
+
+@media screen and (max-width: 800px) {
+	.mainbody {
+		width: 100%;
+		margin-left: 0px;
+	}
+
+	.answerFields, select {
+		width: 80%;
+	}
+
+}
+
+@media screen and (max-width: 600px) {
+	.rightColumn {
+		width: 40%;
+	}
+
+	.labels {
+		width: 50%;
+	}
 }
